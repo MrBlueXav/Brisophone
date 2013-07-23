@@ -91,74 +91,77 @@
   </Components>
   <Files>
     <File name="periph_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="inc/chorusFD.h" path="chorusFD.h" type="1"/>
+    <File name="src/drifter.c" path="drifter.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_dac.c" path="cmsis_lib/source/stm32f4xx_dac.c" type="1"/>
+    <File name="inc/mx_gpio.h" path="mx_gpio.h" type="1"/>
+    <File name="src/random.c" path="random.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
-    <File name="stm32f4_discovery.c" path="stm32f4_discovery.c" type="1"/>
-    <File name="sinetable.c" path="sinetable.c" type="1"/>
-    <File name="delay.h" path="delay.h" type="1"/>
+    <File name="src/soundGen.c" path="soundGen.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
-    <File name="CONSTANTS.h" path="CONSTANTS.h" type="1"/>
-    <File name="mx_gpio.h" path="mx_gpio.h" type="1"/>
+    <File name="src" path="" type="2"/>
     <File name="periph_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
-    <File name="chorusFD.c" path="chorusFD.c" type="1"/>
     <File name="config_boot/startup" path="" type="2"/>
-    <File name="periph_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
-    <File name="stm32f4_discovery_audio_codec.h" path="stm32f4_discovery_audio_codec.h" type="1"/>
-    <File name="periph_lib" path="" type="2"/>
+    <File name="periph_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="periph_lib" path="" type="2"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
     <File name="config_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
-    <File name="soundGen.h" path="soundGen.h" type="1"/>
     <File name="config_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
-    <File name="main.h" path="main.h" type="1"/>
-    <File name="stm32f4xx_it.c" path="stm32f4xx_it.c" type="1"/>
-    <File name="drifter.c" path="drifter.c" type="1"/>
-    <File name="debounce.h" path="debounce.h" type="1"/>
+    <File name="inc/random.h" path="random.h" type="1"/>
     <File name="config_boot/drifter.h" path="drifter.h" type="1"/>
     <File name="periph_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_dac.h" path="cmsis_lib/include/stm32f4xx_dac.h" type="1"/>
-    <File name="LPfilter.c" path="LPfilter.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
     <File name="periph_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
-    <File name="bargraph.c" path="bargraph.c" type="1"/>
+    <File name="Discovery_board" path="" type="2"/>
+    <File name="src/stm32f4xx_it.c" path="stm32f4xx_it.c" type="1"/>
+    <File name="inc/soundGen.h" path="soundGen.h" type="1"/>
+    <File name="Discovery_board/stm32f4_discovery.h" path="stm32f4_discovery.h" type="1"/>
+    <File name="inc/sinetable.h" path="sinetable.h" type="1"/>
     <File name="config_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="src/debounce.c" path="debounce.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_rng.c" path="cmsis_lib/source/stm32f4xx_rng.c" type="1"/>
-    <File name="random.c" path="random.c" type="1"/>
-    <File name="stm32f4_discovery_audio_codec.c" path="stm32f4_discovery_audio_codec.c" type="1"/>
+    <File name="src/mx_gpio.c" path="mx_gpio.c" type="1"/>
+    <File name="src/main.c" path="main.c" type="1"/>
+    <File name="inc/LPfilter.h" path="LPfilter.h" type="1"/>
+    <File name="inc/debounce.h" path="debounce.h" type="1"/>
     <File name="config_boot" path="" type="2"/>
+    <File name="src/LPfilter.c" path="LPfilter.c" type="1"/>
     <File name="config_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
-    <File name="stm32f4xx_it.h" path="stm32f4xx_it.h" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
-    <File name="notesTables.h" path="notesTables.h" type="1"/>
-    <File name="LPfilter.h" path="LPfilter.h" type="1"/>
-    <File name="soundGen.c" path="soundGen.c" type="1"/>
-    <File name="bargraph.h" path="bargraph.h" type="1"/>
+    <File name="inc/stm32f4xx_it.h" path="stm32f4xx_it.h" type="1"/>
     <File name="periph_lib/include" path="" type="2"/>
-    <File name="periph_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="Discovery_board/stm32f4_discovery_audio_codec.h" path="stm32f4_discovery_audio_codec.h" type="1"/>
     <File name="periph_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
-    <File name="random.h" path="random.h" type="1"/>
+    <File name="periph_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="src/delay.c" path="delay.c" type="1"/>
+    <File name="inc" path="" type="2"/>
     <File name="periph_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
-    <File name="sinetable.h" path="sinetable.h" type="1"/>
+    <File name="inc/CONSTANTS.h" path="CONSTANTS.h" type="1"/>
+    <File name="inc/bargraph.h" path="bargraph.h" type="1"/>
+    <File name="src/sinetable.c" path="sinetable.c" type="1"/>
+    <File name="src/chorusFD.c" path="chorusFD.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
     <File name="cmsis" path="" type="2"/>
-    <File name="notesTables.c" path="notesTables.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="inc/main.h" path="main.h" type="1"/>
     <File name="config_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
-    <File name="stm32f4_discovery.h" path="stm32f4_discovery.h" type="1"/>
     <File name="periph_lib/include/stm32f4xx_rng.h" path="cmsis_lib/include/stm32f4xx_rng.h" type="1"/>
     <File name="periph_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="inc/notesTables.h" path="notesTables.h" type="1"/>
     <File name="periph_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
-    <File name="periph_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="src/notesTables.c" path="notesTables.c" type="1"/>
+    <File name="Discovery_board/stm32f4_discovery_audio_codec.c" path="stm32f4_discovery_audio_codec.c" type="1"/>
     <File name="periph_lib/source" path="" type="2"/>
+    <File name="periph_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="src/bargraph.c" path="bargraph.c" type="1"/>
+    <File name="Discovery_board/stm32f4_discovery.c" path="stm32f4_discovery.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
-    <File name="chorusFD.h" path="chorusFD.h" type="1"/>
     <File name="periph_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
-    <File name="delay.c" path="delay.c" type="1"/>
-    <File name="mx_gpio.c" path="mx_gpio.c" type="1"/>
-    <File name="main.c" path="main.c" type="1"/>
-    <File name="debounce.c" path="debounce.c" type="1"/>
+    <File name="inc/delay.h" path="delay.h" type="1"/>
   </Files>
 </Project>

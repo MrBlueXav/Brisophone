@@ -72,7 +72,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
 <input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
 </input>
 </editor>
 </editors>
@@ -92,10 +92,8 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Brisophone"/>
+<element path="/Brisophone/periph_lib"/>
 </expanded>
-<selection>
-<element path="/Brisophone"/>
-</selection>
 </viewState>
 </view>
 <view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
@@ -338,12 +336,12 @@
 <org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
 </editor>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
 </editor>
 </editors>
-<item historyLabel="drifter.h" index="0">
-<position info="not_deleted" x="754" y="0"/>
-</item>
 <item historyLabel="soundGen.c" index="1">
 <position info="not_deleted" x="19195" y="0"/>
 </item>
@@ -482,7 +480,8 @@
 <position info="not_deleted" x="977" y="47"/>
 </item>
 <item historyLabel="Configuration" index="17"/>
-<item active="true" historyLabel="Configuration" index="18"/>
+<item historyLabel="Configuration" index="18"/>
+<item active="true" historyLabel="Configuration" index="19"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
