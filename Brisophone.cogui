@@ -22,58 +22,102 @@
 <part id="9"/>
 <part id="10"/>
 <part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="drifter.c" partName="drifter.c" path="C:/xav_dev/CoIDE/drifter.c" title="drifter.c" tooltip="C:/xav_dev/CoIDE/drifter.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/drifter.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1611" selectionTopPixel="462"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/xav_dev/CoIDE/brisophone_synth/main.c" title="main.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="411" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" partName="delay.c" path="C:/xav_dev/CoIDE/delay.c" title="delay.c" tooltip="C:/xav_dev/CoIDE/delay.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/delay.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="47" selectionOffset="977" selectionTopPixel="175"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="audio.c" partName="audio.c" path="C:/xav_dev/CoIDE/brisophone_synth/audio.c" title="audio.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/audio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/audio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="638" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="delay.h" partName="delay.h" path="C:/xav_dev/CoIDE/delay.h" title="delay.h" tooltip="C:/xav_dev/CoIDE/delay.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/delay.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1238" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="audio.h" partName="audio.h" path="C:/xav_dev/CoIDE/brisophone_synth/audio.h" title="audio.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/audio.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/audio.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="821" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.c" partName="soundGen.c" path="C:/xav_dev/CoIDE/soundGen.c" title="soundGen.c" tooltip="C:/xav_dev/CoIDE/soundGen.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/soundGen.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3672" selectionTopPixel="1755"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bargraph.h" partName="bargraph.h" path="C:/xav_dev/CoIDE/brisophone_synth/bargraph.h" title="bargraph.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/bargraph.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/bargraph.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="25" selectionOffset="1395" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="random.h" partName="random.h" path="C:/xav_dev/CoIDE/random.h" title="random.h" tooltip="C:/xav_dev/CoIDE/random.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/random.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="515" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bargraph.c" partName="bargraph.c" path="C:/xav_dev/CoIDE/brisophone_synth/bargraph.c" title="bargraph.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/bargraph.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/bargraph.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="894" selectionTopPixel="50"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="drifter.h" partName="drifter.h" path="C:/xav_dev/CoIDE/drifter.h" title="drifter.h" tooltip="C:/xav_dev/CoIDE/drifter.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/config_boot/drifter.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="679" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/xav_dev/CoIDE/brisophone_synth/main.h" title="main.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/main.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/main.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="689" selectionTopPixel="230"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/xav_dev/CoIDE/main.h" title="main.h" tooltip="C:/xav_dev/CoIDE/main.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/main.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1387" selectionTopPixel="162"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CONSTANTS.h" partName="CONSTANTS.h" path="C:/xav_dev/CoIDE/brisophone_synth/CONSTANTS.h" title="CONSTANTS.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/CONSTANTS.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/CONSTANTS.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1265" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.h" partName="soundGen.h" path="C:/xav_dev/CoIDE/soundGen.h" title="soundGen.h" tooltip="C:/xav_dev/CoIDE/soundGen.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/soundGen.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1810" selectionTopPixel="751"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.h" partName="stm32f4_discovery_audio_codec.h" path="C:/xav_dev/CoIDE/brisophone_synth/stm32f4_discovery_audio_codec.h" title="stm32f4_discovery_audio_codec.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/stm32f4_discovery_audio_codec.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/Discovery_board/stm32f4_discovery_audio_codec.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2520"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="random.c" partName="random.c" path="C:/xav_dev/CoIDE/random.c" title="random.c" tooltip="C:/xav_dev/CoIDE/random.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/random.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="52" selectionOffset="793" selectionTopPixel="61"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.c" partName="stm32f4_discovery_audio_codec.c" path="C:/xav_dev/CoIDE/brisophone_synth/stm32f4_discovery_audio_codec.c" title="stm32f4_discovery_audio_codec.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/stm32f4_discovery_audio_codec.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/Discovery_board/stm32f4_discovery_audio_codec.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12566" selectionTopPixel="18855"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/xav_dev/CoIDE/main.c" title="main.c" tooltip="C:/xav_dev/CoIDE/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4281" selectionTopPixel="1815"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery.c" partName="stm32f4_discovery.c" path="C:/xav_dev/CoIDE/brisophone_synth/stm32f4_discovery.c" title="stm32f4_discovery.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/stm32f4_discovery.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/Discovery_board/stm32f4_discovery.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="30" selectionOffset="1202" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="CONSTANTS.h" partName="CONSTANTS.h" path="C:/xav_dev/CoIDE/CONSTANTS.h" title="CONSTANTS.h" tooltip="C:/xav_dev/CoIDE/CONSTANTS.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/CONSTANTS.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="598" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.c" partName="soundGen.c" path="C:/xav_dev/CoIDE/brisophone_synth/soundGen.c" title="soundGen.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/soundGen.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/soundGen.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="291" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
-</input>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.h" partName="soundGen.h" path="C:/xav_dev/CoIDE/brisophone_synth/soundGen.h" title="soundGen.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/soundGen.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/soundGen.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="765"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.c" partName="buttons.c" path="C:/xav_dev/CoIDE/brisophone_synth/buttons.c" title="buttons.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/buttons.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/buttons.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="368" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.h" partName="buttons.h" path="C:/xav_dev/CoIDE/brisophone_synth/buttons.h" title="buttons.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/buttons.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/buttons.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1136" selectionOffset="0" selectionTopPixel="20"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" partName="stm32f4xx_it.c" path="C:/xav_dev/CoIDE/brisophone_synth/stm32f4xx_it.c" title="stm32f4xx_it.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/stm32f4xx_it.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/stm32f4xx_it.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="3549" selectionTopPixel="1730"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" partName="stm32f4xx_it.h" path="C:/xav_dev/CoIDE/brisophone_synth/stm32f4xx_it.h" title="stm32f4xx_it.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/stm32f4xx_it.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/stm32f4xx_it.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1387" selectionTopPixel="305"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="debounce.c" partName="debounce.c" path="C:/xav_dev/CoIDE/brisophone_synth/debounce.c" title="debounce.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/debounce.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/debounce.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4294" selectionTopPixel="2000"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="debounce.h" partName="debounce.h" path="C:/xav_dev/CoIDE/brisophone_synth/debounce.h" title="debounce.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/debounce.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/debounce.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="599" selectionTopPixel="5"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="timers.c" partName="timers.c" path="C:/xav_dev/CoIDE/brisophone_synth/timers.c" title="timers.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/timers.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/timers.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="868" selectionTopPixel="245"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="timers.h" partName="timers.h" path="C:/xav_dev/CoIDE/brisophone_synth/timers.h" title="timers.h" tooltip="C:/xav_dev/CoIDE/brisophone_synth/timers.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/inc/timers.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="863" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="mx_gpio.c" partName="mx_gpio.c" path="C:/xav_dev/CoIDE/brisophone_synth/mx_gpio.c" title="mx_gpio.c" tooltip="C:/xav_dev/CoIDE/brisophone_synth/mx_gpio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Brisophone/src/mx_gpio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="3369" selectionTopPixel="450"/>
 </editor>
 </editors>
 <views>
@@ -92,8 +136,14 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/Brisophone"/>
+<element path="/Brisophone/Discovery_board"/>
+<element path="/Brisophone/inc"/>
 <element path="/Brisophone/periph_lib"/>
+<element path="/Brisophone/src"/>
 </expanded>
+<selection>
+<element path="/Brisophone/inc/timers.h"/>
+</selection>
 </viewState>
 </view>
 <view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
@@ -101,8 +151,7 @@
 </view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="2" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
-<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="3" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
@@ -122,7 +171,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.coocox.builder.ui.editors.ConfigEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -177,7 +226,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@d29138" ratio="0.7586207" ratioLeft="660" ratioRight="210" relationship="4" relative="org.eclipse.ui.internal.ViewStack@17a5877">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d29138" ratio="0.6424816" ratioLeft="611" ratioRight="340" relationship="4" relative="org.eclipse.ui.internal.ViewStack@17a5877">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
@@ -311,177 +360,173 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/config_boot/drifter.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/soundGen.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/drifter.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/CONSTANTS.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/CONSTANTS.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/random.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/soundGen.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/soundGen.c"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/soundGen.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/soundGen.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/delay.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/delay.c"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="1" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
-</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/bargraph.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/buttons.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/buttons.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/stm32f4xx_it.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/stm32f4xx_it.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/debounce.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/debounce.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/bargraph.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/timers.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/timers.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/Discovery_board/stm32f4_discovery_audio_codec.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/audio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/inc/audio.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Brisophone/src/mx_gpio.c"/>
 </editors>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="19195" y="0"/>
+<item historyLabel="buttons.c" index="3">
+<position info="not_deleted" x="348" y="20"/>
 </item>
-<item historyLabel="drifter.c" index="2">
-<position info="not_deleted" x="1967" y="25"/>
+<item historyLabel="debounce.h" index="8">
+<position info="not_deleted" x="599" y="0"/>
 </item>
-<item historyLabel="drifter.c" index="2">
-<position info="not_deleted" x="1802" y="0"/>
+<item historyLabel="debounce.c" index="7">
+<position info="not_deleted" x="825" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="1">
+<item historyLabel="main.c" index="0">
 <position/>
 </item>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="16954" y="0"/>
+<item historyLabel="bargraph.c" index="1">
+<position info="not_deleted" x="582" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="642" y="0"/>
+<item historyLabel="bargraph.h" index="9">
+<position info="not_deleted" x="1395" y="25"/>
 </item>
-<item historyLabel="CONSTANTS.h" index="3">
-<position info="not_deleted" x="598" y="0"/>
+<item historyLabel="main.c" index="0">
+<position/>
 </item>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="642" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="1264" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="600" y="3"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="933" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="15839" y="0"/>
+<item historyLabel="debounce.h" index="8">
+<position info="not_deleted" x="599" y="0"/>
 </item>
-<item historyLabel="drifter.c" index="2">
-<position info="not_deleted" x="1817" y="0"/>
+<item historyLabel="buttons.h" index="4">
+<position info="not_deleted" x="0" y="1136"/>
 </item>
-<item historyLabel="soundGen.c" index="1">
-<position info="not_deleted" x="19066" y="0"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="852" y="0"/>
 </item>
-<item historyLabel="drifter.c" index="2">
-<position info="not_deleted" x="1611" y="0"/>
+<item historyLabel="buttons.c" index="3">
+<position info="not_deleted" x="0" y="368"/>
 </item>
-<item historyLabel="drifter.h" index="0">
-<position info="not_deleted" x="661" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="1264" y="0"/>
 </item>
-<item historyLabel="CONSTANTS.h" index="4">
-<position info="not_deleted" x="598" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="548" y="0"/>
 </item>
-<item historyLabel="main.c" index="5">
-<position info="not_deleted" x="8019" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="1264" y="0"/>
 </item>
-<item historyLabel="random.c" index="6">
-<position info="not_deleted" x="793" y="52"/>
+<item historyLabel="main.c" index="0">
+<position/>
 </item>
-<item historyLabel="soundGen.h" index="7">
-<position info="not_deleted" x="761" y="0"/>
+<item historyLabel="main.h" index="2">
+<position info="not_deleted" x="1433" y="0"/>
 </item>
-<item historyLabel="main.h" index="8">
-<position info="not_deleted" x="1878" y="0"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="852" y="0"/>
 </item>
-<item historyLabel="main.c" index="5">
-<position info="not_deleted" x="8203" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="859" y="25"/>
 </item>
-<item historyLabel="main.h" index="8">
-<position info="not_deleted" x="1618" y="0"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="904" y="0"/>
 </item>
-<item historyLabel="main.c" index="5">
-<position info="not_deleted" x="1258" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="481" y="21"/>
 </item>
-<item historyLabel="main.h" index="8">
-<position info="not_deleted" x="1618" y="0"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="904" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="9">
-<position info="not_deleted" x="18700" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="347" y="19"/>
 </item>
-<item historyLabel="soundGen.c" index="9">
-<position info="not_deleted" x="17057" y="5"/>
+<item historyLabel="main.h" index="2">
+<position info="not_deleted" x="708" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="9">
-<position info="not_deleted" x="6122" y="5"/>
+<item historyLabel="stm32f4xx_it.h" index="6">
+<position info="not_deleted" x="1387" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="9">
-<position info="not_deleted" x="6181" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="5">
+<position info="not_deleted" x="3549" y="15"/>
 </item>
-<item historyLabel="soundGen.c" index="9">
-<position info="not_deleted" x="18019" y="0"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="1088" y="0"/>
 </item>
-<item historyLabel="Configuration" index="10"/>
-<item historyLabel="Configuration" index="11"/>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="18247" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="5">
+<position info="not_deleted" x="3549" y="15"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="19151" y="8"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="1088" y="45"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="745" y="8"/>
+<item historyLabel="stm32f4xx_it.c" index="5">
+<position info="not_deleted" x="3549" y="15"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="3799" y="8"/>
+<item historyLabel="debounce.c" index="7">
+<position info="not_deleted" x="4294" y="0"/>
 </item>
-<item historyLabel="main.c" index="13">
-<position info="not_deleted" x="1258" y="0"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="904" y="0"/>
 </item>
-<item historyLabel="main.c" index="13">
-<position info="not_deleted" x="4281" y="0"/>
+<item historyLabel="stm32f4_discovery_audio_codec.c" index="12">
+<position info="not_deleted" x="12566" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="3771" y="12"/>
+<item historyLabel="main.h" index="2">
+<position info="not_deleted" x="689" y="21"/>
 </item>
-<item historyLabel="soundGen.h" index="14">
-<position info="not_deleted" x="1810" y="0"/>
+<item historyLabel="timers.h" index="11">
+<position info="not_deleted" x="863" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="3587" y="22"/>
+<item historyLabel="timers.c" index="10">
+<position info="not_deleted" x="868" y="0"/>
 </item>
-<item historyLabel="delay.h" index="15">
-<position info="not_deleted" x="912" y="0"/>
+<item historyLabel="main.c" index="0">
+<position/>
 </item>
-<item historyLabel="delay.c" index="16">
-<position info="not_deleted" x="306" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1293" y="0"/>
 </item>
-<item historyLabel="delay.c" index="16">
-<position info="not_deleted" x="971" y="0"/>
+<item historyLabel="audio.c" index="13">
+<position info="not_deleted" x="344" y="18"/>
 </item>
-<item historyLabel="delay.c" index="16">
-<position info="not_deleted" x="950" y="22"/>
+<item historyLabel="audio.c" index="13">
+<position info="not_deleted" x="507" y="0"/>
 </item>
-<item historyLabel="delay.h" index="15">
-<position info="not_deleted" x="1238" y="0"/>
+<item historyLabel="audio.h" index="14">
+<position info="not_deleted" x="821" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="3637" y="0"/>
+<item historyLabel="audio.c" index="13">
+<position info="not_deleted" x="507" y="0"/>
 </item>
-<item historyLabel="soundGen.c" index="12">
-<position info="not_deleted" x="3672" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1295" y="0"/>
 </item>
-<item historyLabel="delay.c" index="16">
-<position info="not_deleted" x="977" y="47"/>
+<item historyLabel="audio.c" index="13">
+<position info="not_deleted" x="638" y="0"/>
 </item>
-<item historyLabel="Configuration" index="17"/>
-<item historyLabel="Configuration" index="18"/>
-<item active="true" historyLabel="Configuration" index="19"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="790" y="0"/>
+</item>
+<item historyLabel="bargraph.c" index="1">
+<position info="not_deleted" x="894" y="0"/>
+</item>
+<item historyLabel="mx_gpio.c" index="15">
+<position info="not_deleted" x="3369" y="8"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="411" y="0"/>
+</item>
+<item active="true" historyLabel="audio.h" index="14">
+<position info="not_deleted" x="821" y="0"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -489,51 +534,50 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mx_gpio.c" tooltip="Brisophone/src/mx_gpio.c">
+<persistable path="/Brisophone/src/mx_gpio.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CONSTANTS.h" tooltip="Brisophone/CONSTANTS.h">
-<persistable path="/Brisophone/CONSTANTS.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="timers.h" tooltip="Brisophone/inc/timers.h">
+<persistable path="/Brisophone/inc/timers.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="Brisophone/main.c">
-<persistable path="/Brisophone/main.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="timers.c" tooltip="Brisophone/src/timers.c">
+<persistable path="/Brisophone/src/timers.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="random.c" tooltip="Brisophone/random.c">
-<persistable path="/Brisophone/random.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="debounce.h" tooltip="Brisophone/inc/debounce.h">
+<persistable path="/Brisophone/inc/debounce.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.h" tooltip="Brisophone/soundGen.h">
-<persistable path="/Brisophone/soundGen.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="debounce.c" tooltip="Brisophone/src/debounce.c">
+<persistable path="/Brisophone/src/debounce.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="Brisophone/main.h">
-<persistable path="/Brisophone/main.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="Brisophone/inc/stm32f4xx_it.h">
+<persistable path="/Brisophone/inc/stm32f4xx_it.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="drifter.h" tooltip="Brisophone/config_boot/drifter.h">
-<persistable path="/Brisophone/config_boot/drifter.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="Brisophone/src/stm32f4xx_it.c">
+<persistable path="/Brisophone/src/stm32f4xx_it.c"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\Program Files\GNU Tools ARM Embedded\4.7 2013q2\arm-none-eabi\include\math.h">
-<persistable path="C:\Program Files\GNU Tools ARM Embedded\4.7 2013q2\arm-none-eabi\include\math.h" project="Brisophone"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.h" tooltip="Brisophone/inc/buttons.h">
+<persistable path="/Brisophone/inc/buttons.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="random.h" tooltip="Brisophone/random.h">
-<persistable path="/Brisophone/random.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="buttons.c" tooltip="Brisophone/src/buttons.c">
+<persistable path="/Brisophone/src/buttons.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.c" tooltip="Brisophone/soundGen.c">
-<persistable path="/Brisophone/soundGen.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.h" tooltip="Brisophone/inc/soundGen.h">
+<persistable path="/Brisophone/inc/soundGen.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.h" tooltip="Brisophone/delay.h">
-<persistable path="/Brisophone/delay.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="soundGen.c" tooltip="Brisophone/src/soundGen.c">
+<persistable path="/Brisophone/src/soundGen.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="delay.c" tooltip="Brisophone/delay.c">
-<persistable path="/Brisophone/delay.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery.c" tooltip="Brisophone/Discovery_board/stm32f4_discovery.c">
+<persistable path="/Brisophone/Discovery_board/stm32f4_discovery.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="Brisophone/stm32f4xx_it.h">
-<persistable path="/Brisophone/stm32f4xx_it.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.c" tooltip="Brisophone/Discovery_board/stm32f4_discovery_audio_codec.c">
+<persistable path="/Brisophone/Discovery_board/stm32f4_discovery_audio_codec.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="Brisophone/stm32f4xx_it.c">
-<persistable path="/Brisophone/stm32f4xx_it.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4_discovery_audio_codec.h" tooltip="Brisophone/Discovery_board/stm32f4_discovery_audio_codec.h">
+<persistable path="/Brisophone/Discovery_board/stm32f4_discovery_audio_codec.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="notesTables.c" tooltip="Brisophone/notesTables.c">
-<persistable path="/Brisophone/notesTables.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="CONSTANTS.h" tooltip="Brisophone/inc/CONSTANTS.h">
+<persistable path="/Brisophone/inc/CONSTANTS.h"/>
 </file>
 </mruList>
 </workbench>

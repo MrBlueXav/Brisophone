@@ -31,7 +31,8 @@
 #include "stm32f4xx.h"
 #include "bargraph.h"
 #include "debounce.h"
-#include "main.h"
+#include "timers.h"
+//#include "main.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

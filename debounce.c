@@ -16,14 +16,14 @@
 
 extern uint8_t PBGetState(uint16_t button);  // This function reads the key state from the hardware.
 
-extern void action_ButtonPressed1(void);
-extern void action_ButtonReleased1(void);
-extern void action_ButtonPressed2(void);
-extern void action_ButtonReleased2(void);
-extern void action_ButtonPressed3(void);
-extern void action_ButtonReleased3(void);
-extern void action_ButtonPressed4(void);
-extern void action_ButtonReleased4(void);
+//extern void action_ButtonPressed1(void);
+//extern void action_ButtonReleased1(void);
+//extern void action_ButtonPressed2(void);
+//extern void action_ButtonReleased2(void);
+//extern void action_ButtonPressed3(void);
+//extern void action_ButtonReleased3(void);
+//extern void action_ButtonPressed4(void);
+//extern void action_ButtonReleased4(void);
 
 static uint8_t Count[4] = {RELEASE_MSEC / CHECK_MSEC, RELEASE_MSEC / CHECK_MSEC, RELEASE_MSEC / CHECK_MSEC, RELEASE_MSEC / CHECK_MSEC};
 
@@ -31,11 +31,13 @@ static bool DebouncedKeyPress[4] = {false, false, false, false};  // This holds 
 static bool Key_changed[4] = {false, false, false, false};
 static bool Key_pressed[4] = {false, false, false, false};
 
+
+/***************************************************************************************************************************/
 // Service routine called every CHECK_MSEC to
 // debounce both edges
 
 
-void DebounceSwitch1(void)
+void DebounceSwitch1(void) // Called by SysTick_Handler() in file stm32f4xx_it.c
 {
 	bool RawState;
 
@@ -68,7 +70,7 @@ void DebounceSwitch1(void)
 	}
 }
 
-void DebounceSwitch2(void)
+void DebounceSwitch2(void) // Called by SysTick_Handler() in file stm32f4xx_it.c
 {
 	bool RawState;
 
@@ -101,7 +103,7 @@ void DebounceSwitch2(void)
 	}
 }
 
-void DebounceSwitch3(void)
+void DebounceSwitch3(void) // Called by SysTick_Handler() in file stm32f4xx_it.c
 {
 	bool RawState;
 
@@ -134,7 +136,7 @@ void DebounceSwitch3(void)
 	}
 }
 
-void DebounceSwitch4(void)
+void DebounceSwitch4(void) // Called by SysTick_Handler() in file stm32f4xx_it.c
 {
 	bool RawState;
 

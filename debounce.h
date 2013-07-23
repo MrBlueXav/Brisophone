@@ -19,8 +19,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "stm32f4xx_gpio.h"
+#include "buttons.h"
 
-//#include "main.h"
 
 #define CHECK_MSEC 2 // Read hardware every x msec
 #define PRESS_MSEC 20 // Stable time before registering pressed

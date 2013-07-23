@@ -19,7 +19,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-/* Includes ------------------------------------------------------------------*/
+/* Local includes ------------------------------------------------------------------*/
+#include "audio.h"
+#include "timers.h"
 #include "mx_gpio.h"
 #include "soundGen.h"
 #include "stm32f4_discovery.h"
@@ -38,33 +40,12 @@
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
-
 /* Exported macro ------------------------------------------------------------*/
 
-
-#define BUFF_LEN_DIV4           160 // number of samples <==> XX ms latency at 48kHz
-#define BUFF_LEN_DIV2           (2*BUFF_LEN_DIV4)
-#define BUFF_LEN                (4*BUFF_LEN_DIV4)  // Audio buffer length : count in 16bits half-words
-#define VOL                     70
-#define MAXVOL                  100
-
-#define SYSTICK_FREQ			500 // system tick interruption frequency in Hz
-#define PARAM_MAX				20 // maximal parameter index, starting at 0
-
 /* Exported functions ------------------------------------------------------- */
-void action_ButtonPressed1(void);
-void action_ButtonReleased1(void);
-void action_ButtonPressed2(void);
-void action_ButtonReleased2(void);
-void action_ButtonPressed3(void);
-void action_ButtonReleased3(void);
-void action_ButtonPressed4(void);
-void action_ButtonReleased4(void);
 
-void TimingDelay_Decrement(void);
 
-/*-------------------------------------------------------*/
-extern uint16_t audiobuff[];
+
 
 /*-------------------------------------------------------*/
 #endif /* __MAIN_H */
