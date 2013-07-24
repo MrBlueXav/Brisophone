@@ -9,6 +9,7 @@
 
 #include "soundGen.h"
 
+/*-------------------------------------------------------*/
 #define PARTIALS_NUMBER		10
 #define DELTAPHI			(_2PI/8)
 #define EPSI				.00002f
@@ -50,6 +51,7 @@ void toggleVibrato(void)
 	else
 		lfo.amp = lfo.last_amp;
 }
+/*-------------------------------------------------------*/
 void toggleSynthOut(void)
 {
 	if (op1.amp !=0)
@@ -585,7 +587,7 @@ float_t AdditiveGen_SampleCompute(Oscillator * op) // additive sine generator
 
 	return op->out;
 }
-
+/*-------------------------------------------------------*/
 void
 OpInit(Oscillator * op, float_t amp, float_t freq)
 {

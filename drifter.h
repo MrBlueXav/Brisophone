@@ -13,9 +13,7 @@
 #include "random.h"
 #include "CONSTANTS.h"
 
-/*
-
- */
+/*---------------------------------------------------------------------------------*/
 typedef struct
 {
 	float 	    fmax;
@@ -32,8 +30,7 @@ typedef struct
 
 } Drifter_t;
 
-//void 	drifter_newSegment (Drifter_t *d) ;
-//float 	drifter_nextSample (Drifter_t *d) ;
+/*----------------------------------------------------------------------------------*/
 void 	drifter_init (void) ;
 float 	d1_drifter_nextSample(void) ;
 float 	d2_drifter_nextSample(void) ;

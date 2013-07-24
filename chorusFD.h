@@ -11,11 +11,17 @@
 
 #include  <stdint.h>
 
-#define DEPTH	 			1400 // 29.17 ms
+/*--------------------------------------------------------------------------------------*/
 
-/*
-This interface defines the chorus / delay object
- */
+#define DEPTH	 		1400 // Size of delay buffer, in samples : 29.17 ms
+#define LEFT_DELAY 		700 /*  initial left delay */
+#define RIGHT_DELAY 	600 /*  initial right delay */
+#define LEFT_SWEEP		300
+#define RIGHT_SWEEP		300
+#define LEFT_RATE		0.11f // in Hz
+#define RIGHT_RATE		0.13f // in Hz
+
+/*---------------------------------------------------------------------------------------*/
 typedef struct
 {
 	float 	amp;
@@ -27,16 +33,16 @@ typedef struct
 
 typedef struct
 {
-	float        mix;       /*delay blend parameter*/
-	float        fb;       /*feedback volume*/
-	float        fw;       /*delay tap mix volume*/
-	int32_t      in_idx;    /* delay write index */
-	float        dline[DEPTH] ;	 /* delay buffer */
-	float        baseDelay;	/* tap position */
+	float        mix;       	/* delay blend parameter */
+	float        fb;       		/* feedback volume */
+	float        fw;       		/* delay tap mix volume */
+	int32_t      in_idx;    	/* delay write index */
+	float        dline[DEPTH] ;	/* delay buffer */
+	float        baseDelay;		/* tap position */
 
 } fract_delay ;
 
-
+/*---------------------------------------------------------------------------------------------*/
 
 void chorusFD_init(void);
 void chorusDelay_init(fract_delay *del, float delay_samples,float dfb,float dfw, float dmix);
@@ -58,4 +64,5 @@ float Delay_get_fw(fract_delay *del);
 float Delay_get_mix(fract_delay *del);
 float mono_chorus_compute(fract_delay *del, Lfo_t *lfo, float xin);
 
+/*****************************************************************************************************/
 #endif

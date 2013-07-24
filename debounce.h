@@ -19,6 +19,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "stm32f4xx_gpio.h"
+#include "mx_gpio.h"
 #include "buttons.h"
 
 

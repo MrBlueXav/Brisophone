@@ -8,7 +8,6 @@
  */
 
 #include "notesTables.h"
-//#include "main.h"
 
 /*-------------------------------------------------------------------------------*/
 /* Table of notes frequencies */

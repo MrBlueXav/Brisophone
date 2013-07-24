@@ -138,8 +138,8 @@
     <File name="src/LPfilter.c" path="LPfilter.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="inc/stm32f4xx_it.h" path="stm32f4xx_it.h" type="1"/>
-    <File name="Discovery_board/stm32f4_discovery_audio_codec.h" path="stm32f4_discovery_audio_codec.h" type="1"/>
     <File name="periph_lib/include" path="" type="2"/>
+    <File name="Discovery_board/stm32f4_discovery_audio_codec.h" path="stm32f4_discovery_audio_codec.h" type="1"/>
     <File name="periph_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name="src/delay.c" path="delay.c" type="1"/>

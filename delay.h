@@ -17,8 +17,6 @@
 #define FEEDB                   0.4f
 
 /* Includes ------------------------------------------------------------------*/
-#include <math.h>
-#include <stdlib.h>
 #include <stdint.h>
 #include "CONSTANTS.h"
 

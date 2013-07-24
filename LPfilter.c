@@ -23,8 +23,6 @@ LPfilter_reset()
 	LPfilter_computeCoeff(8000, 0.5f);
 }
 
-
-
 void LPfilter_computeCoeff( float fc, float res)
 {
 	float w, r, k, k2, bh;

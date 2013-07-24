@@ -3,7 +3,7 @@
  * File Name          : chorusFD.c
  * Author			  : Xavier Halgand (thanks to Gabriel Rivas)
  * Date               :
- * Description        :
+ * Description        : stereo chorus/flanger
  ******************************************************************************
  */
 #include "chorusFD.h"
@@ -13,39 +13,29 @@
 #include "CONSTANTS.h"
 
 /* Private define ------------------------------------------------------------*/
-#define MARGIN				6
-#define L_Del_TapCenter 	700 /*  used for add & subtracting delay from nominal tap center */
-#define R_Del_TapCenter 	600 /*  used for add & subtracting delay from nominal tap center */
-#define MAX_COUNT			40
+#define MARGIN			6 // minimal delay (in samples)
+
 
 /*****************************************************************************
- *       Fractional delay line implementation in C:
+ *                       chorus/flanger diagram (one channel) :
  *
  *                    ---------[mix >----------------------------
  *                    |                                         |
  *                    |                                         |
  *                    |x1                                       v
  *     xin ------>[+]----->[z^-M]--[interp.]----[fw >--------->[+]-----> yout
- *                 ^                         |
+ *                 ^         delay line      |
  *                 |                         |
  *                 --< fb]<-------------------
  *
  *******************************************************************************/
 
-/*-------------------------------------------------------------------------------------------*/
-//extern unsigned long _sccm;      /*!< Start address for the .ccm section      */
-//extern unsigned long _eccm;      /*!< End address for the .ccm section        */
 
-static Lfo_t			lfoL, lfoR;
-static fract_delay 		delR, delL ;
-
-//static fract_delay 	delR __attribute__((section(".ccm"))) ;
-//static fract_delay 	delL __attribute__((section(".ccm"))) ;
-
-//uint8_t buffX[10000] __attribute__((section(".ccm"))) = { 0 };
+static Lfo_t			lfoL, lfoR ; // 2 independant LFOs
+static fract_delay 		delR, delL ; // 2 fractional delay lines
 
 /*-------------------------------------------------------------------------------------------*/
-float RandomLfo_SampleCompute(Lfo_t * op) //
+float Lfo_SampleCompute(Lfo_t * op) // ! returns a positive value between 0 and op.amp !
 {
 	float z;
 
@@ -56,26 +46,25 @@ float RandomLfo_SampleCompute(Lfo_t * op) //
 		op->phase -= _2PI;
 
 	z = sinetable[lrintf(ALPHA * (op->phase))];
-	op->out = op->amp*z;
+	op->out = op->amp * (z + 1);
 
 	return op->out;
 }
+
 /*---------------------------------------------------------------------------------------------*/
 void chorusFD_init(void)
 {
-	delL.baseDelay = L_Del_TapCenter;
-	delR.baseDelay = R_Del_TapCenter;
-	chorusDelay_init(&delL, L_Del_TapCenter, .2f, .5f, .5f);
-	chorusDelay_init(&delR, R_Del_TapCenter, .2f, .5f, .5f);
-	lfoL.amp = 300;
-	lfoR.amp = 300;
-	lfoL.freq = .11f ;
-	lfoR.freq = .13f ;
-
+	delL.baseDelay = LEFT_DELAY;
+	delR.baseDelay = RIGHT_DELAY;
+	chorusDelay_init(&delL, LEFT_DELAY, .2f, .5f, .5f);
+	chorusDelay_init(&delR, RIGHT_DELAY, .2f, .5f, .5f);
+	lfoL.amp = LEFT_SWEEP;
+	lfoR.amp = RIGHT_SWEEP;
+	lfoL.freq = LEFT_RATE ;
+	lfoR.freq = RIGHT_RATE ;
 }
-/*
-This function is used to initialize the delay object
- */
+
+/*---------------------------------------------------------------------------------------------*/
 void chorusDelay_init(fract_delay *del, float delay_samples, float dfb, float dfw, float dmix)
 {
 	Delay_set_fb(del, dfb);
@@ -84,21 +73,19 @@ void chorusDelay_init(fract_delay *del, float delay_samples, float dfb, float df
 	del->in_idx = DEPTH - 1;// Place the input pointer at the end of the buffer
 }
 
-/*
-These functions are used as interface to the delay object,
-so there's not direct access to the delay object from
-external modules
- */
+/*-------------------------------------------------------------------------------------------*/
 void inc_chorusRate(void)
 {
 	lfoL.freq *= 1.05f;
 	lfoR.freq *= 1.05f;
 }
+/*-------------------------------------------------------------------------------------------*/
 void dec_chorusRate(void)
 {
 	lfoL.freq *= .95f;
 	lfoR.freq *= .95f;
 }
+/*-------------------------------------------------------------------------------------------*/
 void inc_chorusDelay(void)
 {
 	float d;
@@ -107,52 +94,53 @@ void inc_chorusDelay(void)
 	if (d < DEPTH)
 	{
 		delL.baseDelay = d;
-
 	}
 	d = delR.baseDelay * 1.1f;
 	if (d < DEPTH)
 	{
 		delR.baseDelay = d;
-
 	}
 }
+/*-------------------------------------------------------------------------------------------*/
 void dec_chorusDelay(void)
 {
 	delL.baseDelay *= .9f;
 	delR.baseDelay *= .9f;
 }
+/*-------------------------------------------------------------------------------------------*/
 void inc_chorusFeedback(void)
 {
-	/* increment feedback delay */
+	/* increase feedback delay */
 
 	delL.fb *= 1.02f ;//
 	delR.fb *= 1.02f ;//
 }
-
+/*-------------------------------------------------------------------------------------------*/
 void dec_chorusFeedback(void)
 {
-	/* decrement feedback delay */
+	/* decrease feedback delay */
 
 	delL.fb *= 0.95f ;//
 	delR.fb *= 0.95f ;//
 }
+/*-------------------------------------------------------------------------------------------*/
 void inc_chorusSweep(void)
 {
 	lfoL.amp *= 1.05f ;//
 	lfoR.amp *= 1.05f ;//
 }
-
+/*-------------------------------------------------------------------------------------------*/
 void dec_chorusSweep(void)
 {
 	lfoL.amp *= .95f ;//
 	lfoR.amp *= .95f ;//
 }
-
+/*-------------------------------------------------------------------------------------------*/
 void Delay_set_fb(fract_delay *del, float val)
 {
 	del->fb = val;
 }
-
+/*-------------------------------------------------------------------------------------------*/
 void Delay_set_fw(fract_delay *del, float val)
 {
 	del->fw = val;
@@ -162,23 +150,23 @@ void Delay_set_mix(fract_delay *del, float val)
 {
 	del->mix = val;
 }
-
+/*-------------------------------------------------------------------------------------------*/
 float Delay_get_fb(fract_delay *del )
 {
 	return del->fb;
 }
-
+/*-------------------------------------------------------------------------------------------*/
 float Delay_get_fw(fract_delay *del )
 {
 	return del->fw;
 }
-
+/*-------------------------------------------------------------------------------------------*/
 float Delay_get_mix(fract_delay *del )
 {
 	return del->mix;
 }
 
-
+/*-------------------------------------------------------------------------------------------*/
 void delay_write (fract_delay *del, float xin)
 {
 	del->dline[del->in_idx] = xin;
@@ -186,8 +174,8 @@ void delay_write (fract_delay *del, float xin)
 		del->in_idx = 0;
 	else (del->in_idx)++;
 }
-
-float delay_read (fract_delay *del, float delay) // delay is a floating point number of samples
+/*-------------------------------------------------------------------------------------------*/
+float delay_read (fract_delay *del, float delay) // "delay" is a floating point number of samples
 {
 	float d;		// true delay
 	float f;		// fractional part of delay
@@ -243,7 +231,7 @@ float mono_chorus_compute(fract_delay *del, Lfo_t *lfo, float xin)
 	float x1;
 	float x2;
 
-	x2 = delay_read (del, del->baseDelay + RandomLfo_SampleCompute(lfo) + lfo->amp + MARGIN);
+	x2 = delay_read (del, del->baseDelay + Lfo_SampleCompute(lfo) + MARGIN);
 	x1 = xin + del->fb * x2;
 	yout = del->mix * x1 + del->fw * x2;
 	delay_write(del, x1);
@@ -251,7 +239,7 @@ float mono_chorus_compute(fract_delay *del, Lfo_t *lfo, float xin)
 	return yout;
 }
 
-/*---------------------------------------------------------------------------------------------*/
+/*--------------------This is the main stereo chorus function : ----------------------------*/
 
 void stereoChorus_compute (float * left_out, float * right_out, float in)
 {
