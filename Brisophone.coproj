@@ -95,11 +95,11 @@
     <File name="src/drifter.c" path="drifter.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_dac.c" path="cmsis_lib/source/stm32f4xx_dac.c" type="1"/>
     <File name="inc/mx_gpio.h" path="mx_gpio.h" type="1"/>
-    <File name="src/random.c" path="random.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
+    <File name="src/random.c" path="random.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
-    <File name="src/soundGen.c" path="soundGen.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
+    <File name="src/soundGen.c" path="soundGen.c" type="1"/>
     <File name="src" path="" type="2"/>
     <File name="periph_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
     <File name="config_boot/startup" path="" type="2"/>
@@ -115,20 +115,20 @@
     <File name="config_boot/drifter.h" path="drifter.h" type="1"/>
     <File name="periph_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_dac.h" path="cmsis_lib/include/stm32f4xx_dac.h" type="1"/>
-    <File name="src/buttons.c" path="buttons.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
+    <File name="src/buttons.c" path="buttons.c" type="1"/>
     <File name="periph_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
     <File name="periph_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="Discovery_board" path="" type="2"/>
     <File name="src/stm32f4xx_it.c" path="stm32f4xx_it.c" type="1"/>
     <File name="inc/soundGen.h" path="soundGen.h" type="1"/>
     <File name="Discovery_board/stm32f4_discovery.h" path="stm32f4_discovery.h" type="1"/>
-    <File name="inc/sinetable.h" path="sinetable.h" type="1"/>
     <File name="config_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
+    <File name="inc/sinetable.h" path="sinetable.h" type="1"/>
     <File name="src/debounce.c" path="debounce.c" type="1"/>
     <File name="periph_lib/source/stm32f4xx_rng.c" path="cmsis_lib/source/stm32f4xx_rng.c" type="1"/>
-    <File name="src/mx_gpio.c" path="mx_gpio.c" type="1"/>
     <File name="src/main.c" path="main.c" type="1"/>
+    <File name="src/mx_gpio.c" path="mx_gpio.c" type="1"/>
     <File name="src/timers.c" path="timers.c" type="1"/>
     <File name="inc/LPfilter.h" path="LPfilter.h" type="1"/>
     <File name="inc/audio.h" path="audio.h" type="1"/>
@@ -144,8 +144,8 @@
     <File name="periph_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name="src/delay.c" path="delay.c" type="1"/>
     <File name="inc" path="" type="2"/>
-    <File name="periph_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
     <File name="inc/CONSTANTS.h" path="CONSTANTS.h" type="1"/>
+    <File name="periph_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
     <File name="inc/bargraph.h" path="bargraph.h" type="1"/>
     <File name="src/sinetable.c" path="sinetable.c" type="1"/>
     <File name="inc/buttons.h" path="buttons.h" type="1"/>
@@ -164,8 +164,8 @@
     <File name="periph_lib/source" path="" type="2"/>
     <File name="Discovery_board/stm32f4_discovery_audio_codec.c" path="stm32f4_discovery_audio_codec.c" type="1"/>
     <File name="src/bargraph.c" path="bargraph.c" type="1"/>
-    <File name="periph_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
     <File name="Discovery_board/stm32f4_discovery.c" path="stm32f4_discovery.c" type="1"/>
+    <File name="periph_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
     <File name="periph_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
     <File name="src/audio.c" path="audio.c" type="1"/>
     <File name="inc/delay.h" path="delay.h" type="1"/>

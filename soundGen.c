@@ -10,7 +10,7 @@
 #include "soundGen.h"
 
 /*-------------------------------------------------------*/
-#define PARTIALS_NUMBER		10
+
 #define DELTAPHI			(_2PI/8)
 #define EPSI				.00002f
 #define MAX_SOUNDS			15 // number of different sounds (starts at 0)
@@ -19,8 +19,8 @@
 
 extern uint16_t audiobuff[];
 
-static Oscillator op1 , op2 , op3, lfo  ;
-static EightSegGenerator pitchGen ;
+static Oscillator 			op1 , op2 , op3, lfo  ;
+static EightSegGenerator 	pitchGen ;
 
 static float_t	a[PARTIALS_NUMBER + 1] ;
 static float_t	ph[PARTIALS_NUMBER + 1] ;
@@ -619,12 +619,12 @@ void
 Synth_Init(void)
 {
 	vol = env = 1;
-	decayFactor = 0.99975f;
+	decayFactor = DECAY_FACTOR;
 	LPfilter_reset();
 	OpInit(&op1, 0.8f, 587.f);
 	OpInit(&op2, 0.8f, 587.f);
 	OpInit(&op3, 0.8f, 587.f);
-	OpInit(&lfo, 0.01f, 4.f);
+	OpInit(&lfo, VIBRATO_AMP, VIBRATO_FREQ);
 	AdditiveGen_newWaveform();
 
 	}
@@ -683,13 +683,13 @@ void make_sound(uint16_t offset, uint16_t len)
 			else y = vol * env * OpSampleCompute5(&op1);
 		} 	break;
 
-		case 2 : 	y = vol * env * .8 * OpSampleCompute0(&op1); 	break;
-		case 3 : 	y = vol * env * OpSampleCompute3(&op1);		break;
-		case 4 : 	y = vol * env * OpSampleCompute5(&op1);		break;
-		case 5 : 	y = vol * env * OpSampleCompute4(&op1);		break;
-		case 6 : 	y = vol * env * AdditiveGen_SampleCompute(&op1);		break;
-		case 7 : 	y = vol * env * 0.8f * OpSampleCompute7(&op1);		break;
-		case 8 : 	y = vol * env * op1.amp * frand_a_b(-.8f , .8f);		break;
+		case 2 : 	y = vol * env * .8 * OpSampleCompute0(&op1); 		break;
+		case 3 : 	y = vol * env * OpSampleCompute3(&op1);				break;
+		case 4 : 	y = vol * env * OpSampleCompute5(&op1);				break;
+		case 5 : 	y = vol * env * OpSampleCompute4(&op1);				break;
+		case 6 : 	y = vol * env * 0.8f * OpSampleCompute7(&op1);		break;
+		case 7 : 	y = vol * env * AdditiveGen_SampleCompute(&op1);	break;
+		case 8 : 	y = vol * env * op1.amp * frand_a_b(-.8f , .8f);	break;
 
 		case 9 : 	{	// fundamental + fifth : 1 5
 			OpSetFreq(&op2, f0 * 1.50f);

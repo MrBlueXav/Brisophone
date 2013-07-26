@@ -24,7 +24,7 @@
 #define SYSTICK_FREQ			500 // system tick interruption frequency in Hz
 #define PARAM_MAX				20 // maximal parameter index, starting at 0
 
-#define _CCM_	__attribute__((section(".ccm")))
+#define _CCM_					__attribute__((section(".ccm"))) // not used yet
 
 /************************************************************************************/
 #endif  /*__CONSTANTS_H__ */

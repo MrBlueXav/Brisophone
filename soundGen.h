@@ -11,6 +11,11 @@
 #define __SOUNDGEN_H
 /*--------------------- Global Defines ------------------------ */
 
+#define PARTIALS_NUMBER		15 // number of computed harmonics in the additive generator
+#define DECAY_FACTOR		0.99975f // initial multiplying factor for the envelope decay
+#define VIBRATO_AMP			0.01f
+#define VIBRATO_FREQ		4.5f
+
 /* Includes ------------------------------------------------------------------*/
 #include <math.h>
 #include <stdint.h>
