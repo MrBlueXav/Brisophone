@@ -56,12 +56,14 @@ void chorusFD_init(void)
 {
 	delL.baseDelay = LEFT_DELAY;
 	delR.baseDelay = RIGHT_DELAY;
-	chorusDelay_init(&delL, LEFT_DELAY, .2f, .5f, .5f);
-	chorusDelay_init(&delR, RIGHT_DELAY, .2f, .5f, .5f);
+	chorusDelay_init(&delL, LEFT_DELAY, FEEDBACK, FORWARD, MIX);
+	chorusDelay_init(&delR, RIGHT_DELAY, FEEDBACK, FORWARD, MIX);
 	lfoL.amp = LEFT_SWEEP;
 	lfoR.amp = RIGHT_SWEEP;
 	lfoL.freq = LEFT_RATE ;
 	lfoR.freq = RIGHT_RATE ;
+	lfoL.phase = _PI/2; // initial phases for quadrature
+	lfoR.phase = 0;
 }
 
 /*---------------------------------------------------------------------------------------------*/

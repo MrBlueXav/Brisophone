@@ -14,12 +14,16 @@
 /*--------------------------------------------------------------------------------------*/
 
 #define DEPTH	 		1400 // Size of delay buffer, in samples : 29.17 ms
-#define LEFT_DELAY 		700 /*  initial left delay */
-#define RIGHT_DELAY 	600 /*  initial right delay */
-#define LEFT_SWEEP		300
-#define RIGHT_SWEEP		300
+#define LEFT_DELAY 		240 /*  initial left delay */
+#define RIGHT_DELAY 	240 /*  initial right delay */
+#define LEFT_SWEEP		50
+#define RIGHT_SWEEP		50
 #define LEFT_RATE		0.11f // in Hz
-#define RIGHT_RATE		0.13f // in Hz
+#define RIGHT_RATE		0.12f // in Hz
+#define FEEDBACK		0.2f // look at the diagram
+#define FORWARD			0.5f
+#define MIX				0.5f
+
 
 /*---------------------------------------------------------------------------------------*/
 typedef struct

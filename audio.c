@@ -52,8 +52,6 @@ EVAL_AUDIO_HalfTransfer_CallBack(uint32_t pBuffer, uint32_t Size)
 	STM_EVAL_LEDOff(LED_Orange);
 	make_sound(0, BUFF_LEN_DIV4);
 	STM_EVAL_LEDOn(LED_Orange);
-
-
 }
 //---------------------------------------------------------------------------
 /**
@@ -64,11 +62,9 @@ EVAL_AUDIO_HalfTransfer_CallBack(uint32_t pBuffer, uint32_t Size)
 void
 EVAL_AUDIO_TransferComplete_CallBack(uint32_t pBuffer, uint32_t Size)
 {
-
 	STM_EVAL_LEDOff(LED_Orange);
 	make_sound(BUFF_LEN_DIV2, BUFF_LEN_DIV4);
 	STM_EVAL_LEDOn(LED_Orange);
-
 }
 
 //---------------------------------------------------------------------------
@@ -108,7 +104,7 @@ void incVol(void)
 		EVAL_AUDIO_VolumeCtl(volume);
 	}
 }
-//---------------------------------decrease output DAC volume ------------------------------------------
+//-------------------------------- decrease output DAC volume ------------------------------------------
 void decVol(void)
 {
 	if (volume > 0)
