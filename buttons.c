@@ -14,7 +14,7 @@
 static uint8_t			param = 0;
 static const uint16_t	display[] = {1, 3, 7, 15, 31, 63, 127, 255, 511, 1023,
 							1022, 1020, 1016, 1008, 992, 960, 896, 768, 512 /* index 18 */,
-							513, 771 };
+							513, 771, 903 };
 
 //---------------------------------------------------------------------------
 void action_ButtonPressed1(void) // change parameter to edit (forward)
@@ -82,7 +82,8 @@ void action_ButtonPressed3(void)
 	case 17 :	inc_chorusRate();			break;
 	case 18 :	inc_chorusDelay();			break;
 	case 19 :	inc_chorusSweep();			break;
-	case 20 : 	toggleVibrato();			break;
+	case 20 : 	toggleChorusMode();			break;
+	case 21: 	toggleVibrato();			break;
 	}
 }
 
@@ -119,7 +120,8 @@ void action_ButtonPressed4(void)
 	case 17 :	dec_chorusRate();		break;
 	case 18 :	dec_chorusDelay();		break;
 	case 19 :	dec_chorusSweep();		break;
-	case 20 : 	toggleSynthOut();		break;
+	case 20 : 	changeChorusFDBsign();	break;
+	case 21 : 	toggleSynthOut();		break;
 	}
 }
 

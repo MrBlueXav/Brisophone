@@ -32,7 +32,7 @@
 
 
 static Lfo_t			lfoL, lfoR ; // 2 independant LFOs
-static fract_delay 		delR, delL ; // 2 fractional delay lines
+static chorus_t 		delR, delL ; // 2 fractional delay lines
 
 /*-------------------------------------------------------------------------------------------*/
 float Lfo_SampleCompute(Lfo_t * op) // ! returns a positive value between 0 and op.amp !
@@ -54,8 +54,6 @@ float Lfo_SampleCompute(Lfo_t * op) // ! returns a positive value between 0 and 
 /*---------------------------------------------------------------------------------------------*/
 void chorusFD_init(void)
 {
-	delL.baseDelay = LEFT_DELAY;
-	delR.baseDelay = RIGHT_DELAY;
 	chorusDelay_init(&delL, LEFT_DELAY, FEEDBACK, FORWARD, MIX);
 	chorusDelay_init(&delR, RIGHT_DELAY, FEEDBACK, FORWARD, MIX);
 	lfoL.amp = LEFT_SWEEP;
@@ -67,12 +65,14 @@ void chorusFD_init(void)
 }
 
 /*---------------------------------------------------------------------------------------------*/
-void chorusDelay_init(fract_delay *del, float delay_samples, float dfb, float dfw, float dmix)
+void chorusDelay_init(chorus_t *del, float delay, float dfb, float dfw, float dmix)
 {
 	Delay_set_fb(del, dfb);
 	Delay_set_fw(del, dfw);
 	Delay_set_mix(del, dmix);
+	Delay_set_delay(del, delay);
 	del->in_idx = DEPTH - 1;// Place the input pointer at the end of the buffer
+	del->mode = 1;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -97,6 +97,7 @@ void inc_chorusDelay(void)
 	{
 		delL.baseDelay = d;
 	}
+
 	d = delR.baseDelay * 1.1f;
 	if (d < DEPTH)
 	{
@@ -138,38 +139,55 @@ void dec_chorusSweep(void)
 	lfoR.amp *= .95f ;//
 }
 /*-------------------------------------------------------------------------------------------*/
-void Delay_set_fb(fract_delay *del, float val)
+void toggleChorusMode(void)
+{
+	delL.mode *= -1 ;//
+	delR.mode *= -1 ;//
+}
+/*-------------------------------------------------------------------------------------------*/
+void changeChorusFDBsign(void)
+{
+	delL.fb *= -1.f ;//
+	delR.fb *= -1.f ;//
+}
+/*-------------------------------------------------------------------------------------------*/
+void Delay_set_delay(chorus_t *del, float delay)
+{
+	del->baseDelay = delay;
+}
+/*-------------------------------------------------------------------------------------------*/
+void Delay_set_fb(chorus_t *del, float val)
 {
 	del->fb = val;
 }
 /*-------------------------------------------------------------------------------------------*/
-void Delay_set_fw(fract_delay *del, float val)
+void Delay_set_fw(chorus_t *del, float val)
 {
 	del->fw = val;
 }
-
-void Delay_set_mix(fract_delay *del, float val)
+/*-------------------------------------------------------------------------------------------*/
+void Delay_set_mix(chorus_t *del, float val)
 {
 	del->mix = val;
 }
 /*-------------------------------------------------------------------------------------------*/
-float Delay_get_fb(fract_delay *del )
+float Delay_get_fb(chorus_t *del )
 {
 	return del->fb;
 }
 /*-------------------------------------------------------------------------------------------*/
-float Delay_get_fw(fract_delay *del )
+float Delay_get_fw(chorus_t *del )
 {
 	return del->fw;
 }
 /*-------------------------------------------------------------------------------------------*/
-float Delay_get_mix(fract_delay *del )
+float Delay_get_mix(chorus_t *del )
 {
 	return del->mix;
 }
 
 /*-------------------------------------------------------------------------------------------*/
-void delay_write (fract_delay *del, float xin)
+void delay_write (chorus_t *del, float xin)
 {
 	del->dline[del->in_idx] = xin;
 	if (del->in_idx >= DEPTH-1)
@@ -177,7 +195,7 @@ void delay_write (fract_delay *del, float xin)
 	else (del->in_idx)++;
 }
 /*-------------------------------------------------------------------------------------------*/
-float delay_read (fract_delay *del, float delay) // "delay" is a floating point number of samples
+float delay_read (chorus_t *del, float delay) // "delay" is a floating point number of samples
 {
 	float d;		// true delay
 	float f;		// fractional part of delay
@@ -227,14 +245,19 @@ float delay_read (fract_delay *del, float delay) // "delay" is a floating point 
 This is the main mono chorus task,
  */
 
-float mono_chorus_compute(fract_delay *del, Lfo_t *lfo, float xin)
+float mono_chorus_compute(chorus_t *del, Lfo_t *lfo, float xin)
 {
 	float yout;
 	float x1;
 	float x2;
 
 	x2 = delay_read (del, del->baseDelay + Lfo_SampleCompute(lfo) + MARGIN);
-	x1 = xin + del->fb * x2;
+
+	if (del->mode == 1)
+		x1 = xin + del->fb * x2; // variable delay feedback signal or ...
+	else
+		x1 = xin + del->fb * delay_read (del, del->baseDelay + MARGIN); // fixed delay feedback signal
+
 	yout = del->mix * x1 + del->fw * x2;
 	delay_write(del, x1);
 

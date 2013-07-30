@@ -22,7 +22,7 @@
 #define MAXVOL                  100 // maximal output DAC volume
 
 #define SYSTICK_FREQ			500 // system tick interruption frequency in Hz
-#define PARAM_MAX				20 // maximal parameter index, starting at 0
+#define PARAM_MAX				21 // maximal parameter index, starting at 0
 
 #define _CCM_					__attribute__((section(".ccm"))) // not used yet
 
