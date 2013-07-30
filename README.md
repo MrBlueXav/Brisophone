@@ -4,7 +4,17 @@ This is a semi-random music generator based on a STM32F4 Discovery board and a s
 
 It's a cousin of my previous "Ambiantiseur" project.
 
-Now we have 3 effects : LP filter, chorus/flanger, delay.
+Now we have 4 effects : LP filter, chorus/flanger, delay, distortion.
+
+The latest sound demos are here : https://soundcloud.com/bluexav
+
+Early videos :
+
+http://youtu.be/H8p6o9Nr7k8
+
+http://youtu.be/NJDcqiR5RQg
+
+
 
 Through the 4 buttons you can edit about 20 parameters.
 
@@ -16,11 +26,7 @@ The two second buttons are generally used for increasing or decreasing the param
 
 The bargraph (common cathods) is connected to pins PE6, PE7, .... PE14, PE15. Each output is active at high level (3V). I've used 120 ohms resistors. The display is multiplexed (one Led is on at a time) and not bright...This system doesn't work very well in fact....
 
-Early demos :
 
-http://youtu.be/H8p6o9Nr7k8
-
-http://youtu.be/NJDcqiR5RQg
 
 This project was built with Coocox.org's free IDE : CoIDE 1.7 and the GNU Tools for ARM Embedded Processors (https://launchpad.net/gcc-arm-embedded).
 
