@@ -51,7 +51,7 @@ void DebounceSwitch1(void) // Called by SysTick_Handler() in file stm32f4xx_it.c
 			}
 			else // falling edge
 			{
-				Count[3] = PRESS_MSEC / CHECK_MSEC;
+				Count[0] = PRESS_MSEC / CHECK_MSEC;
 				action_ButtonReleased1();
 			}
 		}
